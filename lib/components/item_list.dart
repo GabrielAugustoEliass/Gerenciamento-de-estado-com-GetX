@@ -26,7 +26,7 @@ class _ItemListState extends State<ItemList> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 32.0),
+      padding: const EdgeInsets.fromLTRB(16, 0.1, 16, 32),
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxHeight: 150),
         child: ListView.builder(
