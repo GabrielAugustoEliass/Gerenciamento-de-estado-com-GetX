@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:panucci_delivery/screens/home.dart';
 
 void main() {
@@ -10,12 +11,8 @@ class PanucciDelivery extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.from(
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromARGB(255, 255, 83, 83),
-          ),
-          useMaterial3: true),
+    return const GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Home(),
     );
   }
